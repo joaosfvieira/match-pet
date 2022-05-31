@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <div class="hedder">
+        <div class="navbar">
+            <img src="images/match-pet-icon.png">
+            <div class="state-select" id="state">
+                <div class="select">
+                    <p id="text"> Estado </p>
+                    <i class="fa-solid fa-chevron-down" id="moving_arrow"></i>
+                </div>
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Pernambuco')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Pernambuco</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Rio Grande do Norte')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rio Grande do Norte</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Paraíba')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Paraíba</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Ceará')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Ceará</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="message">
+                <i class="fa-solid fa-comment"></i>
+            </div>
+        
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="your_logo">
+                <div class="image" id="imageid">
+                    <img src="images/profile.jpg">
+                </div>
+        
+                <div class="dropdown" id="dropdownid">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p> Minha Conta</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-paw"></i>
+                            <p> Adoções</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p> Suporte</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p> Configurações</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p> Sair</p>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+
+        </div>
+    </div>
+
+
+</head> 
+<body>
+<div class="tinder">
+    
+    <div class="tinder--cards">
+        <div class="tinder--card">
+            <img src="images/caramelo.jpg">
+            <h3>Donivaldo</h3>
+            <h4>5 anos</h4>
+            <p>O caramelo mais lindo do RN!</p>
+        </div>
+        <div class="tinder--card">
+            <img src="images/doggo.jpg">
+            <h3>Doggo</h3>
+            <h4>3 anos</h4>
+            <p>I name is Doggo</p>
+        </div>
+        <div class="tinder--card">
+            <img src="images/bdayDog.jpg">
+            <h3>Bday Doggo</h3>
+            <h4>7 anos</h4>
+            <p>Hoje é o meu aniversário</p>
+        </div>
+        <div class="tinder--card">
+            <img src="images/sausage.jpg">
+            <h3>El Salsichón</h3>
+            <h4>11 anos</h4>
+            <p>Lo mejor del mundo, graças a dios</p>
+        </div>
+        <div class="tinder--card">
+            <img src="images/phoon.jpg">
+            <h3>Narigudinho</h3>
+            <h4>1 ano</h4>
+            <p>Aperta meu nariz pra tu ver uma coisa</p>
+        </div>
+    </div>
+    
+    <div class="tinder--buttons">
+        <button id="nope"><i class="fa fa-times"></i></button>
+        <button id="love"><i class="fa fa-heart"></i></button>
+    </div>
+</div>
+
+    
+    <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+</body>
+</html>

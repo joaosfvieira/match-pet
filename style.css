@@ -1,0 +1,270 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.hedder{
+  background-color: #f7f8f9;
+  box-shadow: 0 0 2px grey;
+  position: sticky;
+  top: 0%;
+}
+.navbar{
+  display: flex;
+  align-items:  center;
+  width: 1300px;
+  margin: auto;
+}
+.navbar img{
+  width: 60px; 
+}
+.state-select{
+  width: 250px;
+  margin-left: -100px;
+}
+.select i{
+  font-size: 15px;
+  transition: all 0.3s;
+}
+.select{
+  width: 100%;
+  padding: 10px 10px;
+  background-color:  rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+.option{
+  display: flex;
+  padding: 10px;
+  width: 250px;
+  cursor: pointer;
+}
+.option:hover{
+  background-color: #c7dcff;
+}
+.option p{
+  margin-left: 10px;
+  color: #444444;
+}
+.option i{
+  color: #839a9c;
+}
+.option_box{
+  box-shadow: 0 0 10px grey;
+  background-color: white;
+  display: none;
+  width: 250px;
+  position: absolute;
+  top: 60px;
+}
+.hidden{
+  display: block;
+}
+.roted{
+  transform: rotate(180deg);
+}
+.message i{
+  font-size: 22px;
+  color: black;
+  cursor: pointer; 
+  margin-left: 255px;
+}
+.notification i{
+  font-size: 22px;
+  color: black;
+  cursor: pointer;
+  margin-left: 1px;
+}
+.image img{
+  width: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 55px;
+}
+.nameandimg img{
+    width: 65px;
+    border-radius: 50%;
+}
+.nameandimg p{
+  font-size: 18px;
+  font-weight: bold;
+    
+}
+.nameandimg{
+  display:flex;
+  align-items: center;
+  margin: 10px 0 20px 0;
+}
+.dropdown{
+  width: 250px;
+  box-shadow: 0 0 10px grey;
+  padding: 15px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  align-items: center;
+  top: 60px;
+}
+.dropdown ul li{
+  display: flex;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.dropdown ul li:hover{
+  background-color: #c7dcff;
+}
+.dropdown ul{
+  margin-top: 20px;
+}
+.dropdown ul li i{
+  color: black;
+  font-size: 17px;
+}
+.dropdown ul li p{
+  margin-left: 10px;
+  font-size: 17px;
+}
+.block_div{
+  display: block;
+}
+
+body {
+  background: #CCFBFE;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+  
+.tinder {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+  
+.loaded.tinder {
+  opacity: 1;
+}
+  
+.tinder_love .fa-heart {
+  opacity: 0.7;
+  transform: scale(1);
+}
+  
+.tinder_nope .fa-times {
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+.tinder--cards {
+  flex-grow: 1;
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+  
+.tinder--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 375px;
+  height: 70vh;
+  background: rgb(245, 81, 81);
+  padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: grab;
+}
+  
+.moving.tinder--card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: grabbing;
+}
+  
+.tinder--card img {
+  max-width: 150%;
+  max-height: 50vh;
+  pointer-events: none;
+}
+  
+.tinder--card h3 {
+  margin-top: 20px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+  
+  
+.tinder--card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+  
+.tinder--buttons {
+  flex: 0 0 100px;
+  text-align: center;
+  padding-top: 20px;
+}
+  
+.tinder--buttons button {
+  border-radius: 50%;
+  line-height: 60px;
+  width: 60px;
+  border: 0;
+  background: #e2e2e2;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.tinder--buttons button:hover{
+  color: rgb(45, 151, 155);
+}
+  
+#love {
+  color: rgb(255, 70, 70);
+}
+
+#love:hover {
+  color: rgb(255, 0, 0);
+}
+
+#nope {
+  color: rgb(93, 145, 206);
+}
+
+#nope:hover {
+  color:rgb(37, 76, 121);
+}
+
+.tinder--buttons button:focus {
+  outline: 0;
+}
+
+.tinder--buttons i {
+  font-size: 32px;
+  vertical-align: middle;
+}
+  
+
+  
+  
